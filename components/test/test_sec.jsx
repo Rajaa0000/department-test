@@ -59,9 +59,8 @@ function shuffle(array) {
 
 // safe slug for image filenames (handles spaces / mixed case dept names)
 function slug(name) {
-  return name.trim().toLowerCase().replace(/\s+/g, "-")
+  return name.trim().replace(/\s+/g, "-")
 }
-
 function TestFlow() {
   const [step, setStep] = useState("quiz")
   const [groupIndex, setGroupIndex] = useState(0)
